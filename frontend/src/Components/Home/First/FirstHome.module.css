@@ -1,0 +1,191 @@
+.container{
+    width: 100%;
+    font-family: 'JUST Sans Variable', sans-serif;
+}
+
+.firstContainer {
+  display: flex;
+  padding: 40px;
+  justify-content: space-evenly;
+}
+
+.left {
+    flex: 1;
+  
+}
+.left h1{
+  font-size: 64px; 
+  line-height: 72px; 
+  font-weight: 300;
+  width: 25vw;
+  
+}
+.left p{
+    color:#565656;
+    width: 25vw;
+    line-height: 20.8px;
+    margin-top: 15px;
+}
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  width: 75vw;
+}
+
+.mediaContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.videoContainer {
+  width: 338px;
+  height: 80px;
+  border-radius: 40px / 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  /* margin-bottom: 10px;  */
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.leftAssetsConatiner {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.imageContainerLeft {
+  width: 338px;
+  height: 325px;
+  border-radius: 80px;
+}
+.imageContainerRight {
+  width: 391.1px;
+  height: 430px;
+  border-radius: 80px;
+}
+.imageContainerRight img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.imageContainerLeft img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.connectButton {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+
+.connectButton:hover {
+  background-color: #f5f5f5;
+}
+.icon {
+  font-size: 20px;
+}
+
+.customParagraph {
+    line-height: 35px; 
+    font-size: 21px; 
+    color:#565656;
+    font-weight: 198;
+    padding: 40px;
+  }
+
+
+  .container {
+    padding: 40px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+  }
+   
+  .title {
+    text-align:flex-start;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+   
+  .highlight {
+    color: #d47ba8; /* Customize this color as needed */
+  }
+   
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 20px;
+  }
+   
+  .serviceCard {
+    background-color: white;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.3s ease;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+   
+  .serviceCard h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 198;
+    font-weight: 300;
+    line-height: 20.8px;
+  }
+   
+  .serviceCard p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+   
+  .serviceCard:hover {
+    transform: translateY(-5px);
+  }
+   
+  .arrow {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+   
+  .serviceCard:hover .arrow {
+    color: #000;
+  }
+
+  .serviceCard::before {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Position it absolutely */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Start from the left */
+    width: 100%; /* Make it span the entire width */
+    height: 2px; /* Set the height of the line */
+    background-color: #ddd; /* Customize line color as needed */
+    z-index: 1; /* Ensure it's above the card background */
+  }

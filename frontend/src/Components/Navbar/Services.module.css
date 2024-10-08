@@ -1,0 +1,46 @@
+.servicesSection {
+    padding: 2rem;
+    text-align: left;
+    background-color: #fff;
+    width: 100%;
+    font-family: 'JUST Sans Variable', sans-serif;
+  }
+  
+  .heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .servicesGrid {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  
+  .serviceColumn {
+    flex: 1;
+  }
+ .serviceColumn ul{
+  width: 15rem;
+ }
+  .serviceTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    width: 14rem;
+  }
+  
+  .serviceList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    color: #565656;
+  }
+  
+  .serviceList li {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+  }
+  

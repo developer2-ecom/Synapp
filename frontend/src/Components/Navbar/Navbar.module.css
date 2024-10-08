@@ -1,0 +1,87 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.navLinks {
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.navButton {
+    font-weight: 500;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display:flex;
+    gap:0.6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownMenu {
+    position: absolute; /* This ensures it overlays over the content */
+    top: 3.75rem;; /* Adjust according to your navbar height */
+    left: 0; /* Aligns with the left of the navbar */
+    right: 0; /* Ensures it takes the full width */
+    background-color: white; /* Matches your design */
+    z-index: 10000; /* Ensure it appears above other elements */
+    padding: 1rem; /* Optional padding */
+  }
+  
+
+.dropdownItem {
+    padding: 0.5rem 1rem;
+    /* display: block; */
+    white-space: nowrap;
+}
+
+/* .dropdown:hover .dropdownMenu {
+    display: block;
+} */
+
+.navLink {
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.appointmentButton {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    border: 2px solid #000;
+    border-radius: 9999px;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.appointmentButton:hover {
+    background-color: #f5f5f5;
+}
+
+.icon {
+    margin-left: 0.5rem;
+}

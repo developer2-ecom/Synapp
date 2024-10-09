@@ -1,0 +1,56 @@
+.container {
+  text-align: center;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  line-height: 62.4px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 50px;
+}
+
+.statsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statBox {
+  flex: 1;
+  /* margin: 0 10px; */
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  
+}
+
+.statBox:hover {
+  transform: scale(1.05);
+}
+
+.statValue {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.statDescription {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 10px;
+}
+
+.verticalLine {
+  width: 2px;
+  background-color: #ccc;
+  height: 120px;
+  
+}

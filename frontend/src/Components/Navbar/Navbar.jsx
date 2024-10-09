@@ -9,7 +9,7 @@ const Navbar = () => {
   const toggleServices = () => {
     setShowServices(!showServices);
   };
-
+// TODO: Hover state color desiugn pending
   return (
     <div>
       <nav className={styles.navbar}>

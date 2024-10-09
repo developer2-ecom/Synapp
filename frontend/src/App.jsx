@@ -3,17 +3,28 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './Pages/Home'
-import Services from './Components/Navbar/Services'
+
+import CustomCardThird from './Components/Home/Second/CustomCardThird'
+import ImpactAtAGlance from './Components/Home/Third/ImpactAtAGlance'
+import Testimonials from './Components/Home/Third/Testimonials'
+import PartnersFAQ from './Components/Home/Third/PartnersFAQ'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-     <Home></Home>
-     
+     {/* <Home></Home> */}
+     {/* <CustomCard></CustomCard> */}
+     {/* <CustomCardSecond></CustomCardSecond> */}
+     {/* <CustomCardThird></CustomCardThird> */}
+     {/* <ImpactAtAGlance></ImpactAtAGlance> */}
+     {/* <Testimonials></Testimonials> */}
+
+     <PartnersFAQ></PartnersFAQ>
     </>
   )
 }
 
 export default App
+

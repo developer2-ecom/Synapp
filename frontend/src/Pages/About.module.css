@@ -151,7 +151,6 @@
   width: 100%;
   max-width: 65%;
   border-bottom: 2px solid #ccc;
- 
 }
 
 /* .faqItem:hover {
@@ -170,12 +169,12 @@
 }
 
 .faqItem {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px;
 
-  padding: 10px 0;
+  padding: 10px 0; */
   height: auto;
   border-top: 2px solid #ccc;
-  
+
   /* transition: background-color 0.3s ease, box-shadow 0.3s ease; */
 }
 
@@ -190,7 +189,7 @@
 .answer {
   font-size: 14px;
   color: #616161;
-  padding: 15px;
+  padding: 10px;
   line-height: 20px;
   transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
   width: 80%;
@@ -204,36 +203,101 @@
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
 .faqItem {
-    overflow: hidden; /* Prevent content overflow */
-    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transition for max-height and opacity */
-    opacity: 1; /* Initial opacity */
-  }
-  
-  .answer {
-    max-height: 0; /* Initially hidden */
-    opacity: 0; /* Initially hidden */
-    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transition for max-height and opacity */
-  }
-  
-  .open .answer {
-    max-height: 200px; /* Set to a value that will fit your content */
-    opacity: 1; /* Make it visible */
-  }
-  
-  .toggleIcon {
-    display: inline-block; /* Make sure the icon can be transformed */
-    transition: transform 0.3s ease; /* Transition for the rotation effect */
-    transform: rotate(-90deg); /* Initial rotation (straight) */
+  overflow: hidden; /* Prevent content overflow */
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* Transition for max-height and opacity */
+  opacity: 1; /* Initial opacity */
+}
+
+.answer {
+  max-height: 0; /* Initially hidden */
+  opacity: 0; /* Initially hidden */
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* Transition for max-height and opacity */
+}
+
+.open .answer {
+  max-height: 200px; /* Set to a value that will fit your content */
+  opacity: 1; /* Make it visible */
+}
+
+.toggleIcon {
+  display: inline-block; /* Make sure the icon can be transformed */
+  transition: transform 0.3s ease; /* Transition for the rotation effect */
+  transform: rotate(-90deg); /* Initial rotation (straight) */
 }
 
 .open .toggleIcon {
-    transform: rotate(0deg); /* Rotate the icon when open */
+  transform: rotate(0deg); /* Rotate the icon when open */
 }
+
+
+
+/* ________________________________________________________ */
+
+
+
+.containerForAnalysis {
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  justify-content: center;
+   padding: 40px;
+   width: 80vw;
+   margin: 0 auto;
+   background-color: #ffffff;
+ }
+ 
+ .titleForAnalysis {
+   font-size: 48px;
+   margin-bottom: 20px;
+   /* width: 900px; */
+   font-weight: 300;
+   line-height: 62.4px;
+   text-align: center;
+ }
+ 
+ .subtitleForAnalysis {
+   font-size: 18px;
+   color: #666666;
+   margin-bottom: 50px;
+ }
+ 
+ .statsContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap:30px;
+ }
+ 
+ .statBox {
+   flex: 1;
+   margin: 0 10px;
+   padding: 10px;
+   border-radius: 8px;
+   transition: transform 0.3s;
+   
+ }
+ 
+ .statBox:hover {
+   transform: scale(1.05);
+ }
+ 
+ .statValue {
+   font-size: 40px;
+   font-weight: bold;
+   color: #000000;
+ }
+ 
+ .statDescription {
+   font-size: 16px;
+   color: #666666;
+   margin-top: 10px;
+ }
+ 
+ .verticalLine {
+   width: 2px;
+   background-color: #ccc;
+   height: 120px;
+   
+ }
+ 

@@ -4,6 +4,8 @@
    flex-direction:column;
    justify-content: center;
     padding: 40px;
+    width: 80vw;
+    margin: 0 auto;
     background-color: #ffffff;
   }
   

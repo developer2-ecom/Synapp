@@ -1,0 +1,36 @@
+/* .smallPara{
+    font-size: 48px;
+    font-weight: 300;
+    color: #000;
+    font-family: "JUST Sans Variable", sans-serif;
+
+} */
+
+
+
+/* HomeMiddle.module.css */
+
+.container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .cards {
+    display: flex;
+    transition: transform 0.5s ease; 
+    width: 100%;
+  }
+  
+  .smallPara {
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    flex: 1;
+    min-width: 100%;
+  }
+  

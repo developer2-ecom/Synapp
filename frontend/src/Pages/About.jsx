@@ -5,6 +5,9 @@ import { FaArrowRight } from "react-icons/fa6";
 import HighlightedText from "../Components/HighlightedText";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
+import AnalysisDataOfWeb from "../Components/ServiceSection/AnalysisDataOfWeb";
+import MessageForm from "../Components/Home/Third/MessageForm";
+import Footer from "../Components/Home/Third/Footer";
 
 const About = () => {
   const [openQuestion, setOpenQuestion] = useState(null);
@@ -100,29 +103,72 @@ const About = () => {
         </div>
       </section> */}
 
-
-<section className={styles.faq}>
-  <div className={styles.faqItems}>
-    {faqData.map((item, index) => (
-      <div
-        key={index}
-        className={`${styles.faqItem} ${openQuestion === index ? styles.open : ""}`}
-      >
-        <div className={styles.question} onClick={() => toggleFAQ(index)}>
-          {item.question}
-          <span className={`${styles.toggleIcon} ${openQuestion === index ? styles.open : ''}`}>
-            {openQuestion === index ? <FaMinus /> : <FaPlus />}
-          </span>
+      <section className={styles.faq}>
+        <div className={styles.faqItems}>
+          {faqData.map((item, index) => (
+            <div
+              key={index}
+              className={`${styles.faqItem} ${
+                openQuestion === index ? styles.open : ""
+              }`}
+            >
+              <div className={styles.question} onClick={() => toggleFAQ(index)}>
+                {item.question}
+                <span
+                  className={`${styles.toggleIcon} ${
+                    openQuestion === index ? styles.open : ""
+                  }`}
+                >
+                  {openQuestion === index ? <FaMinus /> : <FaPlus />}
+                </span>
+              </div>
+              <div
+                className={`${styles.answer} ${
+                  openQuestion === index ? styles.open : ""
+                }`}
+              >
+                {item.answer}
+              </div>
+            </div>
+          ))}
         </div>
-        <div className={`${styles.answer} ${openQuestion === index ? styles.open : ''}`}>
-          {item.answer}
+      </section>
+
+      {/* ___________________________________________ */}
+
+
+      <div className={styles.containerForAnalysis}>
+      <h1 className={styles.titleForAnalysis}>
+        How Clients Are <HighlightedText text="Transforming" /> with synapp!?
+      </h1>
+      <p className={styles.subtitleForAnalysis}>
+      See how SYNAPP’s software and technical services drive real business results. 
+      </p>
+      <div className={styles.statsContainer}>
+        <div className={styles.statBox}>
+          <h2 className={styles.statValue}>96%</h2>
+          <p className={styles.statDescription}>
+            Improvement in data processing efficiency
+          </p>
+        </div>
+        <div className={styles.verticalLine}></div>
+        <div className={styles.statBox}>
+          <h2 className={styles.statValue}>75%</h2>
+          <p className={styles.statDescription}>
+            Improvement in user engagement on apps
+          </p>
+        </div>
+        <div className={styles.verticalLine}></div>
+        <div className={styles.statBox}>
+          <h2 className={styles.statValue}>60%</h2>
+          <p className={styles.statDescription}>Projects Delivered</p>
         </div>
       </div>
-    ))}
-  </div>
-</section>
+    </div>
 
-
+    {/* _____________________________________________________________ */}
+      <MessageForm></MessageForm>
+      <Footer></Footer>
     </div>
   );
 };

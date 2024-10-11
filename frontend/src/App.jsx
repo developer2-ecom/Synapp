@@ -15,6 +15,9 @@ import ServiceSection from './Components/ServiceSection/ServiceSection'
 import AIIntegration from './Components/ServiceSection/AIIntegration'
 import AnalysisDataOfWeb from './Components/ServiceSection/AnalysisDataOfWeb'
 import About from './Pages/About'
+import Contact from './Pages/Contact'
+import IndividualService from './Pages/IndividualService'
+import HomeMiddle from './Pages/HomeMiddle'
 
 function App() {
   
@@ -39,9 +42,13 @@ function App() {
     {/* <AIIntegration></AIIntegration> */}
     {/* <AnalysisDataOfWeb></AnalysisDataOfWeb> */}
 
-    {/* _____________________ABOUT____________________________________ */}
+    {/* _____________________Pages____________________________________ */}
 
-    <About></About>
+    {/* <About></About> */}
+    {/* <Contact></Contact> */}
+    {/* <IndividualService></IndividualService> */}
+    {/* <Home></Home> */}
+    <HomeMiddle></HomeMiddle>
     </>
   )
 }
